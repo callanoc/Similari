@@ -2,15 +2,15 @@
 
 extern crate test;
 
-use similari::distance::euclidean;
-use similari::examples::FeatGen;
-use similari::prelude::{NoopNotifier, ObservationBuilder, TrackStoreBuilder};
-use similari::track::{
+use cecile_supercool_tracker::distance::euclidean;
+use cecile_supercool_tracker::examples::FeatGen;
+use cecile_supercool_tracker::prelude::{NoopNotifier, ObservationBuilder, TrackStoreBuilder};
+use cecile_supercool_tracker::track::{
     MetricOutput, MetricQuery, NoopLookup, Observation, ObservationMetric, ObservationMetricOk,
     ObservationsDb, TrackAttributes, TrackAttributesUpdate, TrackStatus,
 };
-use similari::voting::topn::TopNVoting;
-use similari::voting::Voting;
+use cecile_supercool_tracker::voting::topn::TopNVoting;
+use cecile_supercool_tracker::voting::Voting;
 use std::time::Instant;
 use test::Bencher;
 

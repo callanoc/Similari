@@ -1,10 +1,12 @@
-use similari::examples::{current_time_ms, BoxGen2};
-use similari::prelude::{NoopNotifier, ObservationBuilder, TrackStoreBuilder};
-use similari::trackers::sort::metric::SortMetric;
-use similari::trackers::sort::voting::SortVoting;
-use similari::trackers::sort::{SortAttributes, SortAttributesOptions, DEFAULT_SORT_IOU_THRESHOLD};
-use similari::trackers::spatio_temporal_constraints::SpatioTemporalConstraints;
-use similari::voting::Voting;
+use cecile_supercool_tracker::examples::{current_time_ms, BoxGen2};
+use cecile_supercool_tracker::prelude::{NoopNotifier, ObservationBuilder, TrackStoreBuilder};
+use cecile_supercool_tracker::trackers::sort::metric::SortMetric;
+use cecile_supercool_tracker::trackers::sort::voting::SortVoting;
+use cecile_supercool_tracker::trackers::sort::{
+    SortAttributes, SortAttributesOptions, DEFAULT_SORT_IOU_THRESHOLD,
+};
+use cecile_supercool_tracker::trackers::spatio_temporal_constraints::SpatioTemporalConstraints;
+use cecile_supercool_tracker::voting::Voting;
 use std::sync::Arc;
 use std::thread;
 use std::time::Duration;

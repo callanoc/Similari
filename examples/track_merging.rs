@@ -1,18 +1,18 @@
 use crate::Gender::{Female, Male};
 use anyhow::Result;
-use itertools::Itertools;
-use once_cell::sync::OnceCell;
-use similari::distance::euclidean;
-use similari::examples::current_time_ms;
-use similari::examples::FeatGen2;
-use similari::store::TrackStore;
-use similari::track::notify::NoopNotifier;
-use similari::track::{
+use cecile_supercool_tracker::distance::euclidean;
+use cecile_supercool_tracker::examples::current_time_ms;
+use cecile_supercool_tracker::examples::FeatGen2;
+use cecile_supercool_tracker::store::TrackStore;
+use cecile_supercool_tracker::track::notify::NoopNotifier;
+use cecile_supercool_tracker::track::{
     MetricOutput, MetricQuery, NoopLookup, Observation, ObservationAttributes, ObservationMetric,
     ObservationsDb, TrackAttributes, TrackAttributesUpdate, TrackStatus,
 };
-use similari::voting::topn::TopNVoting;
-use similari::voting::Voting;
+use cecile_supercool_tracker::voting::topn::TopNVoting;
+use cecile_supercool_tracker::voting::Voting;
+use itertools::Itertools;
+use once_cell::sync::OnceCell;
 use std::cmp::{max, min};
 
 use std::thread;
@@ -204,7 +204,7 @@ fn cam_tracking_attributes_update_test() {
 
 #[test]
 fn feat_gen() {
-    use similari::examples::FeatGen2;
+    use cecile_supercool_tracker::examples::FeatGen2;
     use std::ops::Sub;
     use ultraviolet::f32x8;
 

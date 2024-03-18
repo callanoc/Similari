@@ -2,9 +2,9 @@
 
 extern crate test;
 
+use cecile_supercool_tracker::examples::FeatGen2;
+use cecile_supercool_trackerutils::kalman::kalman_2d_point::Point2DKalmanFilter;
 use nalgebra::Point2;
-use similari::examples::FeatGen2;
-use similari::utils::kalman::kalman_2d_point::Point2DKalmanFilter;
 use test::Bencher;
 
 #[bench]

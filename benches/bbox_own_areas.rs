@@ -2,8 +2,8 @@
 
 extern crate test;
 
-use similari::examples::BoxGen2;
-use similari::utils::clipping::bbox_own_areas::{
+use cecile_supercool_tracker::examples::BoxGen2;
+use cecile_supercool_tracker::utils::clipping::bbox_own_areas::{
     exclusively_owned_areas, exclusively_owned_areas_normalized_shares,
 };
 use test::Bencher;

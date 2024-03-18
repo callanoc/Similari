@@ -2,13 +2,13 @@
 
 extern crate test;
 
+use cecile_supercool_tracker::examples::{UnboundAttributeUpdate, UnboundAttrs, UnboundMetric};
+use cecile_supercool_tracker::track::Feature;
 use rand::{distributions::Uniform, Rng};
-use similari::examples::{UnboundAttributeUpdate, UnboundAttrs, UnboundMetric};
-use similari::track::Feature;
 
-use similari::prelude::TrackStoreBuilder;
-use similari::track::notify::NoopNotifier;
-use similari::track::utils::FromVec;
+use cecile_supercool_tracker::prelude::TrackStoreBuilder;
+use cecile_supercool_tracker::track::notify::NoopNotifier;
+use cecile_supercool_tracker::track::utils::FromVec;
 use test::Bencher;
 
 fn bench_capacity_len(vec_len: usize, track_len: usize, count: usize, b: &mut Bencher) {

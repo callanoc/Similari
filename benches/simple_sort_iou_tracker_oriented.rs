@@ -2,15 +2,15 @@
 
 extern crate test;
 
+use cecile_supercool_trackerexamples::BoxGen2;
+use cecile_supercool_trackertrackers::sort::metric::DEFAULT_MINIMAL_SORT_CONFIDENCE;
+use cecile_supercool_trackertrackers::sort::simple_api::Sort;
+use cecile_supercool_trackertrackers::sort::PositionalMetricType::IoU;
+use cecile_supercool_trackertrackers::sort::DEFAULT_SORT_IOU_THRESHOLD;
+use cecile_supercool_trackertrackers::spatio_temporal_constraints::SpatioTemporalConstraints;
+use cecile_supercool_trackertrackers::tracker_api::TrackerAPI;
+use cecile_supercool_trackerutils::bbox::Universal2DBox;
 use rand::Rng;
-use similari::examples::BoxGen2;
-use similari::trackers::sort::metric::DEFAULT_MINIMAL_SORT_CONFIDENCE;
-use similari::trackers::sort::simple_api::Sort;
-use similari::trackers::sort::PositionalMetricType::IoU;
-use similari::trackers::sort::DEFAULT_SORT_IOU_THRESHOLD;
-use similari::trackers::spatio_temporal_constraints::SpatioTemporalConstraints;
-use similari::trackers::tracker_api::TrackerAPI;
-use similari::utils::bbox::Universal2DBox;
 use test::Bencher;
 
 #[bench]

@@ -1,13 +1,13 @@
-use similari::distance::euclidean;
-use similari::examples::{BoxGen2, FeatGen2};
-use similari::prelude::*;
-use similari::track::{
+use cecile_supercool_tracker::distance::euclidean;
+use cecile_supercool_tracker::examples::{BoxGen2, FeatGen2};
+use cecile_supercool_tracker::prelude::*;
+use cecile_supercool_tracker::track::{
     MetricOutput, MetricQuery, NoopLookup, Observation, ObservationAttributes, ObservationMetric,
     ObservationMetricOk, ObservationsDb, TrackAttributes, TrackAttributesUpdate, TrackStatus,
 };
-use similari::utils::bbox::BoundingBox;
-use similari::voting::topn::TopNVoting;
-use similari::voting::Voting;
+use cecile_supercool_tracker::utils::bbox::BoundingBox;
+use cecile_supercool_tracker::voting::topn::TopNVoting;
+use cecile_supercool_tracker::voting::Voting;
 use std::thread;
 use std::time::Duration;
 

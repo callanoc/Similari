@@ -1,11 +1,11 @@
-use similari::examples::BoxGen2;
-use similari::trackers::batch::PredictionBatchRequest;
-use similari::trackers::sort::batch_api::BatchSort;
-use similari::trackers::sort::metric::DEFAULT_MINIMAL_SORT_CONFIDENCE;
-use similari::trackers::sort::PositionalMetricType::IoU;
-use similari::trackers::sort::DEFAULT_SORT_IOU_THRESHOLD;
-use similari::trackers::tracker_api::TrackerAPI;
-use similari::utils::bbox::BoundingBox;
+use cecile_supercool_tracker::examples::BoxGen2;
+use cecile_supercool_tracker::trackers::batch::PredictionBatchRequest;
+use cecile_supercool_tracker::trackers::sort::batch_api::BatchSort;
+use cecile_supercool_tracker::trackers::sort::metric::DEFAULT_MINIMAL_SORT_CONFIDENCE;
+use cecile_supercool_tracker::trackers::sort::PositionalMetricType::IoU;
+use cecile_supercool_tracker::trackers::sort::DEFAULT_SORT_IOU_THRESHOLD;
+use cecile_supercool_tracker::trackers::tracker_api::TrackerAPI;
+use cecile_supercool_tracker::utils::bbox::BoundingBox;
 
 fn main() {
     let mut tracker = BatchSort::new(

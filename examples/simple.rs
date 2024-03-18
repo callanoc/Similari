@@ -1,9 +1,9 @@
-use similari::examples::{vec2, SimpleAttributeUpdate, SimpleAttrs, SimpleMetric};
-use similari::store;
-use similari::track::notify::NoopNotifier;
-use similari::track::Track;
-use similari::voting::topn::TopNVoting;
-use similari::voting::Voting;
+use cecile_supercool_tracker::examples::{vec2, SimpleAttributeUpdate, SimpleAttrs, SimpleMetric};
+use cecile_supercool_tracker::store;
+use cecile_supercool_tracker::track::notify::NoopNotifier;
+use cecile_supercool_tracker::track::Track;
+use cecile_supercool_tracker::voting::topn::TopNVoting;
+use cecile_supercool_tracker::voting::Voting;
 
 fn main() {
     const DEFAULT_FEATURE: u64 = 0;

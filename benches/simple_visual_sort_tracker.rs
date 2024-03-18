@@ -2,14 +2,14 @@
 
 extern crate test;
 
+use cecile_supercool_tracker::examples::BoxGen2;
+use cecile_supercool_tracker::prelude::{VisualSort, VisualSortObservation, VisualSortOptions};
+use cecile_supercool_tracker::trackers::sort::PositionalMetricType;
+use cecile_supercool_tracker::trackers::spatio_temporal_constraints::SpatioTemporalConstraints;
+use cecile_supercool_tracker::trackers::tracker_api::TrackerAPI;
+use cecile_supercool_tracker::trackers::visual_sort::metric::VisualSortMetricType;
 use rand::distributions::Uniform;
 use rand::Rng;
-use similari::examples::BoxGen2;
-use similari::prelude::{VisualSort, VisualSortObservation, VisualSortOptions};
-use similari::trackers::sort::PositionalMetricType;
-use similari::trackers::spatio_temporal_constraints::SpatioTemporalConstraints;
-use similari::trackers::tracker_api::TrackerAPI;
-use similari::trackers::visual_sort::metric::VisualSortMetricType;
 use test::Bencher;
 
 #[bench]

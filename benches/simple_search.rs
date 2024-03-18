@@ -2,12 +2,12 @@
 
 extern crate test;
 
+use cecile_supercool_tracker::examples::{UnboundAttributeUpdate, UnboundAttrs, UnboundMetric};
+use cecile_supercool_tracker::prelude::{ObservationBuilder, TrackStoreBuilder};
+use cecile_supercool_tracker::track::notify::NoopNotifier;
+use cecile_supercool_tracker::track::utils::FromVec;
+use cecile_supercool_tracker::track::Feature;
 use rand::{distributions::Uniform, Rng};
-use similari::examples::{UnboundAttributeUpdate, UnboundAttrs, UnboundMetric};
-use similari::prelude::{ObservationBuilder, TrackStoreBuilder};
-use similari::track::notify::NoopNotifier;
-use similari::track::utils::FromVec;
-use similari::track::Feature;
 use test::Bencher;
 
 #[bench]

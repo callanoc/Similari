@@ -2,9 +2,9 @@
 
 extern crate test;
 
-use similari::examples::BoxGen2;
-use similari::utils::bbox::Universal2DBox;
-use similari::utils::nms::nms;
+use cecile_supercool_trackerexamples::BoxGen2;
+use cecile_supercool_trackerutils::bbox::Universal2DBox;
+use cecile_supercool_trackerutils::nms::nms;
 use test::Bencher;
 
 #[bench]
